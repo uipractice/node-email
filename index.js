@@ -27,5 +27,9 @@ process
   .on("warning", (warning) => {
     console.log(warning.stack);
   });
-  
+
+  app.use('/*', (req, res)=>{
+    res.status(404).send(`API not found`);
+  })
+
 module.exports.handler = serverless(app);
