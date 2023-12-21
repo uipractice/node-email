@@ -27,5 +27,4 @@ process
   .on("warning", (warning) => {
     console.log(warning.stack);
   });
-
 module.exports.handler = serverless(app);
