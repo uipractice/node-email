@@ -29,7 +29,7 @@ process
   });
 
   app.use('/*', (req, res)=>{
-    res.status(404).send(`API not found123`);
+    res.status(404).send(`API not found`);
   })
 
 module.exports.handler = serverless(app);
